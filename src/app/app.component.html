@@ -1,0 +1,19 @@
+<div>file names</div>
+<div *ngFor="let key of keys">
+  <div (click)="fileName(key)">{{key}}</div>
+</div>
+<br>
+<div>file tables</div>
+<div *ngFor="let table of dataTable">
+  <div (click)="tableName(table)">{{table.title}}</div>
+</div>
+<br>
+<div>Table information</div>
+<div *ngIf="tableShow">
+  title: <div>{{table.title}}</div>
+  rows: <div>{{table.rows}}</div>
+  columns: <div>{{table.columns}}</div>
+  notes: <div>{{table.notes}}</div>
+</div>
+
+
